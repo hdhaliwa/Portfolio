@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+nav {
+  height: 60px;
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+}
+
+nav .icon-img {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+ 
+}
+
+nav li {
+  display: inline-block;
+  text-align: right;
+}
+
+nav li::after {
+  content: "|";
+  margin-left: 5px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+body {
+  background: url(https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.3_the_position_property/outerspace_landscape.jpeg) no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding-top: 90px;
+  min-width: 1000px;
+}
+
+.box {
+  margin-top: 150px;
+  width: 600px;
+  height: 300px;
+  position: relative;
+  border: 10px dotted white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container > .menu {
+  display: none;
+  list-style: none;
+}
+
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+header {
+  color: rgba(0, 17, 255, 0.657);
+  padding: 12% 0;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+/* for tablet sized screens*/
+@media screen and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > .logo {
+    flex: 55px;
+  }
+
+  header > h1 {
+    flex: 2 0;
+    text-align: left;
+  }
+
+  footer > .social {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer > .social > .social_icon {
+    font-size: 1.4em;
+  }
+}
+
+/* for desktop sized screens*/
+@media screen and (min-width: 780px) {
+  .container > .hamburger {
+    display: none;
+  }
+
+  .container > .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .container > .menu > li {
+    flex: 0 0 100px;
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+  }
+
+}
