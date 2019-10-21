@@ -18,50 +18,48 @@ body {
 }
 
 nav {
-  height: 60px;
-  background-color: grey;
-  position: fixed;
-  width: 100%;
-}
+  display:none;
+ }
 
-nav .icon-img {
+#portfolio,#employment,#contact,#projects,footer{
+  display:none;
+} 
+
+/* nav .icon-img {
   height: 50px;
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 50%;
   vertical-align: middle;
   border: 1px solid black;
-}
-
+} */
+/* 
 nav ul {
   display: inline-block;
   list-style: none;
  
-}
+} */
 
-nav li {
+/* nav li {
   display: inline-block;
   text-align: right;
-}
+} */
 
-nav li::after {
+/* nav li::after {
   content: "|";
   margin-left: 5px;
 }
 
 nav a:hover {
   color: black;
-}
+} */
 
-body {
-  background: url(https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.4.3_the_position_property/outerspace_landscape.jpeg) no-repeat;
-  background-size: cover;
-}
+
 
 main {
-  padding-top: 90px;
-  min-width: 1000px;
-}
+  display:flex;
+  flex-wrap: wrap;
+ }
 
 .box {
   margin-top: 150px;
@@ -90,7 +88,7 @@ header {
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+  background-color: rgb(187, 187, 187);
 }
 
 section:nth-child(even) {
@@ -103,16 +101,26 @@ section:nth-child(even) {
     justify-content: center;
     align-items: center;
   }
+  nav {
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  background-color: #565656;
+  margin-bottom: 2px;
+  padding: 2px;
+}
 
   header > .logo {
     flex: 55px;
   }
-
+  
   header > h1 {
     flex: 2 0;
     text-align: left;
   }
-
+#portfolio{
+  display:block;
+}
   footer > .social {
     display: flex;
     justify-content: space-around;
