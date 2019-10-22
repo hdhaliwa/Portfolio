@@ -61,7 +61,7 @@ main {
   flex-wrap: wrap;
  }
 
-.box {
+/* .box {
   margin-top: 150px;
   width: 600px;
   height: 300px;
@@ -69,7 +69,7 @@ main {
   border: 10px dotted white;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 .container > .menu {
   display: none;
   list-style: none;
@@ -81,8 +81,14 @@ footer {
 }
 
 header {
+  margin-left: 100px;
   color: rgba(0, 17, 255, 0.657);
   padding: 12% 0;
+ 
+}
+aside{
+  margin-top: 60px;
+  margin-left: 50px;
 }
 
 section {
